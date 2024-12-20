@@ -16,7 +16,20 @@ class Helper
             <td>' . $char . $menu->name .'</td>
             <td>' . $menu->active .'</td>
             <td>' . $menu->updated_at .'</td>
-            <td>&nbsp;</td>
+            <td>
+              <a 
+                class="btn btn-primary btn-sm" 
+                href="' . asset('admin/menus/edit/' . $menu->id) . '"
+              >
+                <i class="fa fa-edit"></i>
+              </a>
+              <a 
+                class="btn btn-danger btn-sm" href="#" 
+                onclick="removeRow(' . $menu->id .', \'' . asset('admin/menus/destroy') . '\')"
+              >
+                <i class="fa fa-trash"></i>
+              </a>
+            </td>
           </tr>
         ';
 

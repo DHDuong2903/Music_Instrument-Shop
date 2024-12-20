@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Menu\CreateFormRequest;
-use Illuminate\Http\Request;
 use App\Http\Services\Menu\MenuService;
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
+
 
 class MenuController extends Controller
 {
@@ -35,6 +37,21 @@ class MenuController extends Controller
         return view('admin.menu.list', [
             'title' => 'Latest Category List',
             'menus' => $this->menuService->getAll()
+        ]);
+    }
+
+    public function destroy(Request $request): JsonResponse
+    {
+        $result = $this->menuService->destroy($request);
+        if ($result) {
+            return response()->json([
+                'error' => false,
+                'message' => 'Delete Success'
+            ]);
+        }
+
+        return response()->json([
+            'error' => true
         ]);
     }
 }
