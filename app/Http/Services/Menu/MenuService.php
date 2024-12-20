@@ -15,6 +15,11 @@ class MenuService
     return Menu::where('parent_id', 0)->get();
   }
 
+  public function getAll()
+  {
+    return Menu::orderbyDesc('id')->paginate(20);
+  }
+
   public function create($request)
   {
     try {
