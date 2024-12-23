@@ -4,10 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\Admin\MenuController;
-
-Route::get('/', function(){
-  return 'Welcome to Main Page';
-});
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\UploadController;
 
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
@@ -28,6 +26,20 @@ Route::middleware(['auth'])->group(function(){
       Route::post('edit/{menu}', [MenuController::class, 'update']);
       Route::delete('destroy', [MenuController::class, 'destroy']);
     });
+
+
+    // Product
+    Route::prefix('products')->group(function(){
+      Route::get('add', [ProductController::class, 'create']);
+      Route::post('add', [ProductController::class, 'store']);
+      Route::get('list', [ProductController::class, 'index']);
+      Route::get('edit/{product}', [ProductController::class, 'show']);
+      Route::post('edit/{product}', [ProductController::class, 'update']);
+      Route::delete('destroy', [ProductController::class, 'destroy']);
+    });
+
+    // Upload
+    Route::post('upload/services', [UploadController::class, 'store']);
   });
 });
 
