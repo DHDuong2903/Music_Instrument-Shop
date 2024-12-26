@@ -23,7 +23,7 @@ class MenuController extends Controller
     public function create()
     {
         return view('admin.menu.add', [
-            'title' => 'Add new category',
+            'title' => 'Add New Category',
             'menus' => $this->menuService->getParent()
         ]);
     }

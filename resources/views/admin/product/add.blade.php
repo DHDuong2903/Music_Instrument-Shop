@@ -77,7 +77,7 @@
         </div>
 
         <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Add product</button>
+            <button type="submit" class="btn btn-primary">Add Product</button>
         </div>
         @csrf
     </form>

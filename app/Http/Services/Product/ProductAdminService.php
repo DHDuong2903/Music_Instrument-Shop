@@ -20,12 +20,12 @@ class ProductAdminService
         if ($request->input('price') != 0 && $request->input('price_sale') != 0
             && $request->input('price_sale') >= $request->input('price')
         ) {
-            Session::flash('error', 'Giá giảm phải nhỏ hơn giá gốc');
+            Session::flash('error', 'The selling price must be lower than the original price');
             return false;
         }
 
         if ($request->input('price_sale') != 0 && (int)$request->input('price') == 0) {
-            Session::flash('error', 'Vui lòng nhập giá gốc');
+            Session::flash('error', 'Enter original price');
             return false;
         }
 
@@ -41,9 +41,9 @@ class ProductAdminService
             $request->except('_token');
             Product::create($request->all());
 
-            Session::flash('success', 'Thêm Sản phẩm thành công');
+            Session::flash('success', 'Add Product Successfully');
         } catch (\Exception $err) {
-            Session::flash('error', 'Thêm Sản phẩm lỗi');
+            Session::flash('error', 'Add Product Failed');
             \Log::info($err->getMessage());
             return  false;
         }

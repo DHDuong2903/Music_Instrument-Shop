@@ -79,6 +79,31 @@
             </li>
           </ul>
         </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-images"></i>
+              <p> Slider
+                  <i class="right fas fa-angle-left"></i>
+              </p>
+          </a>
+          <ul class="nav nav-treeview">
+              <li class="nav-item">
+                  <a href="{{ asset('admin/sliders/add') }}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Slider</p>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="{{ asset('admin/sliders/list') }} " class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>List Slider</p>
+                  </a>
+              </li>
+
+          </ul>
+        </li>
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
