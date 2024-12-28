@@ -10,7 +10,9 @@ MySQL: Hệ quản trị cơ sở dữ liệu mạnh mẽ, dùng để lưu tr�
 2. Người thực hiện
 
 Họ và tên: Đỗ Huy Dương
+
 Mã sinh viên: 22010179
+
 Ngành học: CNTT
 
 3. Sơ đồ khối UML
