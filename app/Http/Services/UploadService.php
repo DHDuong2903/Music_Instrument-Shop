@@ -17,8 +17,7 @@ class UploadService
 
                 // Lưu file vào thư mục storage/app/public
                 $request->file('file')->storeAs(
-                    'public/' . $pathFull,
-                    $name
+                    'public/' . $pathFull, $name
                 );
 
                 // Trả về URL công khai của tệp
