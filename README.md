@@ -19,6 +19,71 @@ Ngành học: CNTT
 
 4. Sơ đồ các chức năng UML
 
+* Đăng nhập
+
+<p align="center">
+  <img src="umls/login.png" alt="Login UML" title="Login UML" />
+  Sơ đồ UML chức năng đăng nhập trang admin
+</p>
+
+* Create (product)
+
+<p align="center">
+  <img src="umls/create.png" alt="Create UML" title="Create UML" />
+  Sơ đồ UML chức năng thêm sản phẩm
+</p>
+
+* Read (product)
+
+<p align="center">
+  <img src="umls/list.png" alt="List UML" title="List UML" />
+  Sơ đồ UML chức năng xem sản phẩm
+</p>
+
+* Update (product)
+
+<p align="center">
+  <img src="umls/update.png" alt="Update UML" title="Update UML" />
+  Sơ đồ UML chức năng sửa sản phẩm
+</p>
+
+* Delete (product)
+
+<p align="center">
+  <img src="umls/delete.png" alt="Delete UML" title="Delete UML" />
+  Sơ đồ UML chức năng xóa sản phẩm
+</p>
+
+
 5. Giao diện trang web
 
+* UI đăng nhập
+
+<p align="center">
+  <img src="umls/login-img.png" alt="Login" title="Login" />
+</p>
+
+* UI trang admin
+
+<p align="center">
+  <img src="umls/admin-img.png" alt="Admin " title="Admin" />
+</p>
+
+* UI trang bán hàng
+
+<p align="center">
+  <img src="umls/home-img.png" alt="Home " title="Home" />
+</p>
+
+* UI sản phẩm
+
+<p align="center">
+  <img src="umls/product-img.png" alt="Product " title="Product" />
+</p>
+
+* UI giỏ hàng
+
+<p align="center">
+  <img src="umls/cart-img.png" alt="Cart " title="Cart" />
+</p>
 6. Link deploy
