@@ -17,12 +17,19 @@ Ngành học: CNTT
 
 3. Sơ đồ khối UML
 
+<p align="center">
+  <img src="umls/web.png" alt="Web UML" title="Web UML" />
+  
+  Sơ đồ UML của trang web
+</p>
+
 4. Sơ đồ các chức năng UML
 
 * Đăng nhập
 
 <p align="center">
   <img src="umls/login.png" alt="Login UML" title="Login UML" />
+  
   Sơ đồ UML chức năng đăng nhập trang admin
 </p>
 
@@ -54,6 +61,19 @@ Ngành học: CNTT
   Sơ đồ UML chức năng xóa sản phẩm
 </p>
 
+* Upload 
+
+<p align="center">
+  <img src="umls/upload.png" alt="Upload UML" title="Upload UML" />
+  Sơ đồ UML chức năng upload ảnh
+</p>
+
+* Cart
+
+<p align="center">
+  <img src="umls/cart.png" alt="Cart UML" title="Cart UML" />
+  Sơ đồ UML chức năng order sản phẩm trong giỏ hàng
+</p>
 
 5. Giao diện trang web
 

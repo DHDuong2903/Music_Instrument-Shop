@@ -3,8 +3,6 @@
 
 namespace App\Http\Services;
 
-
-use App\Jobs\SendMail;
 use App\Models\Cart;
 use App\Models\Customer;
 use App\Models\Product;
